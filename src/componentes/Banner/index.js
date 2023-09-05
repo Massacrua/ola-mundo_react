@@ -7,7 +7,7 @@ export default function Banner() {
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
                 <h1 className={styles.titulo}>
-                    Olá, mundo bão!
+                    Olá, mundaowalodawl!
                 </h1>
                 <p className={styles.paragrafo}>
                     Boas vindas ao meu espaço pessoal! Eu sou Guilherme Dalla Rosa, desenvolvedor Front-End e aluno da Alura. Este é um projeto em SPA de estudos de React Router Dom '')
@@ -23,7 +23,7 @@ export default function Banner() {
                 <img
                     className={styles.minhaFoto}
                     src={minhaFoto}
-                    alt="Foto do Antonio sorrindo."
+                    alt="Foto do Guilherme sorrindo."
                 />
             </div>
         </div>

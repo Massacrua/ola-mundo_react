@@ -1,15 +1,20 @@
-import styles from "./Post.module.css"
+import { useParams } from "react-router-dom"
+import posts from "json/posts.json"
+import PostModelo from "componentes/PostModelo"
 
-export default function Post({ post }) {
+export default function Post() {
+    const parametros = useParams()
+
+    
+    const post = posts.find(post => post.id === Number(parametros.id))
+    console.log(post)
+
     return (
-        <div className={styles.post}>
-            <img 
-                className={styles.capa}
-                src={`assets/posts/${post.id}/capa.png`}
-                alt="Imagem de capa do post"
-            />
-            <h2 className={styles.titulo}>{post.titulo}</h2>
-            <button className={styles.botaoLer}>Ler</button>
-        </div>  
+        <PostModelo
+            fotoCapa={`/assets/posts/${post.id}/capa.png`}
+            titulo={post.titulo}
+        >
+            Texto...
+        </PostModelo>
     )
 }
