@@ -15,6 +15,7 @@ export default function PostModelo({ children, fotoCapa, titulo }) {
             <div className={styles.postConteudoContainer}>
                 {children}
             </div>
+            <h2 className={styles.titulo} style={{fontSize: "2.5rem"}}>Outros posts que você pode gostar:</h2>
         </article>
     )
 }
